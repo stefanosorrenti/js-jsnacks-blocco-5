@@ -22,7 +22,7 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-// USANDO SOLO IL LOG
+// log
 console.log(students[0].class);
 
 
@@ -38,9 +38,22 @@ students.forEach(student => {
 
 console.log(lanciClass);
 
+
+//USANDO FIND
+const classeLanci = students.find(function(student){
+  
+  if(student.id === 1) {
+    return console.log(student.class);
+    
+  }
+  
+  return false
+})
+
+
 //USANDO IL FIND
 
-const classLanci = students.find(student => {
+/* const classLanci = students.find(student => {
 
   if(student.id === 1) {
 
@@ -53,3 +66,6 @@ const classLanci = students.find(student => {
 })
 
 console.log(classLanci.class);
+ */
+
+
