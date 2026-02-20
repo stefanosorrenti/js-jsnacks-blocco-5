@@ -21,3 +21,25 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+//USANDO IL FIND
+
+const mario = students.find(student =>{
+  
+  if(student.id === 2) {
+    return true
+  }
+  return false
+})
+
+console.log(mario);
+
+
+//CON FOR EACH
+let mairoEach;
+students.forEach(student => {
+  mairoEach = students[1]
+  
+})
+
+console.log(mairoEach);
