@@ -1,6 +1,14 @@
 const names = ['Edoardo', 'Simone', 'Francesco'];
 
-console.log(names);
+
+//USANDO MAP
+const namesMap = names.map((name)=>{
+    return name
+})
+
+
+console.log(namesMap);
+
 
 
 // Stampa in console tutti i nomi

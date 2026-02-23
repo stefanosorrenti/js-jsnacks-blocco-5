@@ -42,7 +42,7 @@ console.log(lanciClass);
 //USANDO FIND
 const classeLanci = students.find(function(student){
   
-  if(student.id === 1) {
+  if(student.name === 'Marco Lanci') {
     return console.log(student.class);
     
   }
